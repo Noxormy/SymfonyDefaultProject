@@ -1,0 +1,27 @@
+#  Created by PhpStorm.
+#  User: Nnox
+
+getAction:
+  path:      /api/{entity_name}/{id}
+  controller: App\Controller\MainController:getAction
+  methods:    [GET]
+
+getMultipleAction:
+  path:      /api/{entity_name}
+  controller: App\Controller\MainController:getMultipleAction
+  methods:    [GET]
+
+createAction:
+  path:      /api/{entity_name}
+  controller: App\Controller\MainController:createAction
+  methods:    [POST]
+
+updateAction:
+  path:      /api/{entity_name}/{id}
+  controller: App\Controller\MainController:updateAction
+  methods:    [POST]
+
+deleteAction:
+  path:      /api/{entity_name}/{id}
+  controller: App\Controller\MainController:deleteAction
+  methods:    [DELETE]
