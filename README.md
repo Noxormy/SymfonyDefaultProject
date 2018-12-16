@@ -3,7 +3,7 @@ This project can be used like basis of your Symfony project. <br/>
 With default routes: getAction, createAction, updateAction, deleteAction and getMultipleAction
 with filters.
 
-##### Instructions for install:
+### Instructions for install:
 1. Press a green button "Clone or Download" and copy link.
 2. Clone the project. If you use PhpStorm:<br/> 
     a) Press **Check out from version control** -> **Git** <br/>
@@ -25,7 +25,7 @@ with filters.
 [http://iantonov.me/page/ustanovka-php-71-v-windows-komandnaja-stroka]: http://iantonov.me/page/ustanovka-php-71-v-windows-komandnaja-stroka
 [https://getcomposer.org/download/]: https://getcomposer.org/download/
 
-##### Instructions for use:
+### Instructions for use:
 
 1. Create entities, that you need with help doctrine. Enter the command: <br/>
  `php bin/console make:entity` <br/>
@@ -36,7 +36,53 @@ with filters.
   `php bin/console doctrine:migrations:migrate`
 
 
-####Thanks for use!
+### Routes:
 
-######you can contact me for email noxormy@gmail.com
+Routes are in file **routes.yml** <br/>
+For default your server url = `127.0.0.1:8000`. <br/>
+`"entity_name"` = entity, that you created. <br/>
+`"id`" = id of your entity in database. <br/>
+`"filter"` = filter options, just get request, you can send filter like this
+`api/"entity_name"?example_field_1=example_value&example_field_2=example_value`.
+
+**getAction**: <br/>
+    GET REQUEST <br/>
+    
+    127.0.0.1:8000/api/"entity_name"/"id"
+    
+You get entity current **"entity_name"** id.
+
+**getMultipleAction**: <br/>
+    GET REQUEST <br/>
+
+    127.0.0.1:8000/api/"entity_name"/"filter"
+    
+You get entities current **"entity_name"** type and\or filter(s).
+
+**createAction**: <br/>
+    POST REQUEST <br/>
+
+    127.0.0.1:8000/api/"entity_name"
+    
+You create entity current **"entity_name"** type. <br/>
+Entity parameters you can set in body request.
+
+**updateAction**: <br/>
+    POST REQUEST <br/>
+
+    127.0.0.1:8000/api/"entity_name"/"id"
+    
+You update entity current **"entity_name"** from id. <br/>
+Entity parameters you can set in body request.
+
+**deleteAction**: <br/>
+    DELETE REQUEST <br/>
+
+    127.0.0.1:8000/api/"entity_name"/"id"
+    
+You delete entity current **"entity_name"** from id
+
+#### Thanks for use!
+
+###### You can contact me for email noxormy@gmail.com
    
