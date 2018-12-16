@@ -36,7 +36,6 @@ with filters.
   `php bin/console doctrine:migrations:migrate`
 
 
-####Thanks for use!
+#### Thanks for use!
 
-######you can contact me for email noxormy@gmail.com
-   
+###### you can contact me for email noxormy@gmail.com
