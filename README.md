@@ -10,12 +10,14 @@ with filters.
     b) Paste the link into the url field <br/>
     c) Click **Clone project**
 3. Install php ([Manual][http://php.net/manual/ru/install.php], [Manual_rus][http://iantonov.me/page/ustanovka-php-71-v-windows-komandnaja-stroka]) And add php in system PATH variable.<br/>
+    **For windows:** <br/>
     a) Open php.ini (In php installed folder) <br/>
     b) Find string **";extension=pdo_mysql"** <br/>
-    c) You need delete semicolon, to make the row become like **"extension=pdo_mysql"**
+    c) You need delete semicolon, to make the row become like **"extension=pdo_mysql"** <br/>
+    ####For linux
 4. Install Composer. ([Manual][https://getcomposer.org/download/])
 5. Enter the command `composer install` in the terminal and wait until all dependencies are downloaded. <br/>
-    a) If you have a problem with "framework.router" option "utf8" - edit config/packages/routing.yml, delete utf8 option.
+    a) If you have a problem with "framework.router" option "utf8" - edit config/packages/routing.yaml, delete utf8 option.
 6. Enter the command: `php bin/console server:run`. <br/>
 7. Create database server.
 8. Create database. Enter the command: `php bin/console doctrine:database:create`
@@ -85,4 +87,16 @@ You delete entity current **"entity_name"** from id
 #### Thanks for use!
 
 ###### You can contact me for email noxormy@gmail.com
+
+# FAQ
+1. The requested PHP extension ext-iconv * is missing from your system. Install or enable PHP's iconv extension. <br/>
+   a) Open php.ini (In php installed folder) <br/>
+   b) Find string **";extension=iconv.so"** <br/>
+   c) You need delete semicolon, to make the row become like **"extension=iconv.so"** <br/>
+2. Can i use sqllite? <br/>
+    Of course :) <br/>
+    a) Open php.ini (In php installed folder) <br/>
+    b) Find string **";extension=pdo_sqlite.so"** <br/>
+    c) You need delete semicolon, to make the row become like **"extension=pdo_sqlite.so"** <br/>
+
    
