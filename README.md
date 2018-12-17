@@ -93,8 +93,16 @@ You delete entity current **"entity_name"** from id
    c) You need delete semicolon, to make the row become like **"extension=iconv.so"** <br/>
 2. Can i use sqllite? <br/>
     Of course :) <br/>
-    a) Open php.ini (In php installed folder) <br/>
-    b) Find string **";extension=pdo_sqlite.so"** <br/>
-    c) You need delete semicolon, to make the row become like **"extension=pdo_sqlite.so"** <br/>
-
+    **For windows:**
+    Install [sqlite3][https://www.sqlite.org/download.html] and add it to PATH [Manual][http://www.sqlitetutorial.net/download-install-sqlite/]
+    **For Linux**
+    Install sqlite3 [Manual_rus][https://mraak.ru/linux/ubuntu-16-04/ubuntu-16-04-sqlite3-install.html]
+    or
+     `sudo apt install sqlite3`
+     `sudo apt install php-sqlite3`
+      
+3. After i 
    
+[https://www.sqlite.org/download.html]: https://www.sqlite.org/download.html
+[http://www.sqlitetutorial.net/download-install-sqlite/]: http://www.sqlitetutorial.net/download-install-sqlite/
+[https://mraak.ru/linux/ubuntu-16-04/ubuntu-16-04-sqlite3-install.html]: https://mraak.ru/linux/ubuntu-16-04/ubuntu-16-04-sqlite3-install.html
