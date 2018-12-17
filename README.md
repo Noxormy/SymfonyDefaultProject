@@ -99,7 +99,9 @@ You delete entity current **"entity_name"** from id
     Install sqlite3 [Manual_rus][https://mraak.ru/linux/ubuntu-16-04/ubuntu-16-04-sqlite3-install.html] <br/>
     or <br/>
      `sudo apt install sqlite3` <br/>
-     `sudo apt install php-sqlite3` <br/>    
+     `sudo apt install php-sqlite3` <br/>
+3. After install and create database i have error in browser: "An exception occured in driver: could not find driver"<br/>
+    Check, that you install all "sql" or "sqlite" drivers, and uncomment all necessary"extensions" in php.ini <br/>
    
 [https://www.sqlite.org/download.html]: https://www.sqlite.org/download.html
 [http://www.sqlitetutorial.net/download-install-sqlite/]: http://www.sqlitetutorial.net/download-install-sqlite/
