@@ -10,11 +10,9 @@ with filters.
     b) Paste the link into the url field <br/>
     c) Click **Clone project**
 3. Install php ([Manual][http://php.net/manual/ru/install.php], [Manual_rus][http://iantonov.me/page/ustanovka-php-71-v-windows-komandnaja-stroka]) And add php in system PATH variable.<br/>
-    **For windows:** <br/>
     a) Open php.ini (In php installed folder) <br/>
     b) Find string **";extension=pdo_mysql"** <br/>
     c) You need delete semicolon, to make the row become like **"extension=pdo_mysql"** <br/>
-    ####For linux
 4. Install Composer. ([Manual][https://getcomposer.org/download/])
 5. Enter the command `composer install` in the terminal and wait until all dependencies are downloaded. <br/>
     a) If you have a problem with "framework.router" option "utf8" - edit config/packages/routing.yaml, delete utf8 option.
