@@ -15,7 +15,6 @@ class SampleEntity
     public function getFields() {
         $reflection = new ReflectionClass($this);
         $vars = $reflection->getProperties(\ReflectionProperty::IS_PRIVATE);
-        unset($vars[0]); //Delete id from array, because id can't changed
         return $vars;
     }
 
